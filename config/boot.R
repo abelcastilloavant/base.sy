@@ -19,5 +19,8 @@ if (!isTRUE(director$cache_get("bootstrapped"))) {
 
   # Now load the routes, which will bring in all the other controllers.
   director$resource("config/routes")
+
+  # Holler that you're a new version
+  cat("\n *** versioning works *** \n")
 }
 
